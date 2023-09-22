@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Layout</title>
-    <link rel="stylesheet" type"text/css" href="styles.css">
+    <link rel="stylesheet" type"text/css" href="cs.css"/>
+    
 </head>
 <body>
     <header>
-        <h1> ESCUTCHEON </h1>
+        <h1> EscutcheonOS </h1>
     </header>
     
     <hr style="width:100%;text-align:left;margin-left:0">
@@ -22,40 +24,33 @@
         </section>
         
         <section>
-            <h2>Password policies</h2>
+            <h3>Password policies</h3>
 	    <p> Ubuntu password policies strengthen security by enforcing strong, periodically updated passwords with a mix of characters. They also implement lockout measures after failed attempts, thwarting potential breaches   .</p>
 	    <p> Only strong passwords are to be set by the users.</p>
-	    <h2> Remove packages</h2>
+	    <h3> Remove packages</h3>
 	     <p>Removing unnecessary packages is a crucial step in Ubuntu OS hardening. It involves identifying and uninstalling redundant software or services that may pose security risks or bloat the system. By reducing the attack surface and minimizing potential vulnerabilities.</p>
-	<h2> UFW Install </h2>
+	<h3> UFW Install </h3>
 	<p> Provides a simplified interface for managing IP tables, the default firewall management tool. With UFW, users can easily configure rules to allow or deny specific network traffic, safeguarding their system against unauthorized access and potential threats. </p>
-	<h2>  UFW Enable</h2>
+	<h3>  UFW Enable</h3>
 	<p> With UFW enabled, you can easily define policies to allow or deny specific network traffic, enhancing the security of your Ubuntu system against potential threats and unauthorized access</p>
-	<h2> UFW  Disable</h2>
+	<h3> UFW  Disable</h3>
 	<p> Deactivates UFW, temporarily suspending its rule enforcement. Disabling the firewall may leave your system more vulnerable to potential threats, so exercise caution and consider re-enabling it when needed for enhanced security</p>
-	<h2> UFW Allow port </h2>
-	<p> </p>
-	<h2> UFW Allow IP  </h2>
-	<p> </p>
-	<h2> UPW Block IP </h2>
-	<p> </p>
-	<h2> Disable/Enable USB storage </h2>
-	<p> </p>
-	<h2> TOR service disable </h2>	
-	<p> </p>
+	<h3> UFW Allow port </h3>
+	<p> To allow a specific port using the Uncomplicated Firewall (UFW) for OS hardening in Ubuntu, use the command 'sudo ufw allow [port number]'. Replace '[port number]' with the actual port you want to open. This command configures UFW to permit incoming connections on that port, enhancing security by enabling necessary services while keeping other ports protected.</p>
+	<h3> UFW Allow IP  </h3>
+	<p> To allow a specific IP address through the Uncomplicated Firewall (UFW) in Ubuntu for OS hardening, use the command 'sudo ufw allow from [IP address]' in the terminal. This grants access to the specified IP, adding an extra layer of security by controlling network traffic. This practice helps safeguard your system against potential threats while allowing trusted sources to communicate with your Ubuntu system</p>
+	<h3> UPW Block IP </h3>
+	<p> To block an IP address using the Uncomplicated Firewall (UFW) for OS hardening in Ubuntu, execute the command 'sudo ufw deny from [IP_Address]' in the terminal. This prevents incoming connections from the specified IP, adding an extra layer of security to your system. Managing access in this way helps protect against potential threats and unauthorized access attempts</p>
+	<h3> Disable/Enable USB storage </h3>
+	<p> To enhance security in Ubuntu, you can disable or enable USB storage access. Disabling it restricts the use of external USB devices, adding an extra layer of defense against potential threats like malware or unauthorized data transfers. Conversely, enabling USB storage allows legitimate usage of external drives. This control over USB access is a valuable aspect of OS hardening, providing administrators with a means to manage and secure data flow within the system</p>
+	<h3> TOR service disable </h3>	
+	<p> To disable the TOR service in Ubuntu for OS hardening, run the command 'sudo systemctl disable tor' in the terminal. This stops TOR from starting automatically on system boot, reducing potential security risks associated with anonymous network connections. By disabling TOR, you can have more control over network traffic and strengthen the security of your Ubuntu system.</p>
 
 
 
-            <ul>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li>SEO</li>
-            </ul>
         </section>
     </main>
     
-    <footer>
-        <p>&copy; 2023 My Website</p>
-    </footer>
+   
 </body>
 </html>
